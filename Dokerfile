@@ -1,0 +1,4 @@
+FROM openjdk:8-jre-slim
+EXPOSE 9090
+ADD target/EmployeeCrud-0.0.1-SNAPSHOT.jar empcrud.jar
+ENTRYPOINT ["java","-jar","empcrud.jar"]
